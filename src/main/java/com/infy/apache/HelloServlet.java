@@ -12,6 +12,7 @@ public class HelloServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        System.out.println("Hello Servlet!");
         resp.getWriter().println("<html><h1>" + LocalDateTime.now() + "</h1></html>");
         //super.doGet(req, resp);
     }
