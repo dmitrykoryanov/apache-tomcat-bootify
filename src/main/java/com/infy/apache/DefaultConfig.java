@@ -14,6 +14,8 @@ import java.sql.Driver;
 })
 public class DefaultConfig {
 
+    public final String SOME_PROPERTY = "SOME_PROPERTY";
+
     @Bean
     @Conditional(TomcatOnClassPathCondition.class)
     public TomcatLauncher tomcatLauncher() {
