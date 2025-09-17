@@ -19,7 +19,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-
+        System.out.println("Feature branch 1");
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(DefaultConfig.class);
         DataSource dataSource = context.getBean(DataSource.class);
 
